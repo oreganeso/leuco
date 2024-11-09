@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Recuerdos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Álbum</h1>
+        <nav id="menu">
+            <button onclick="showSection('teleferico')">Teleférico</button>
+            <button onclick="showSection('tito')">Tito</button>
+            <button onclick="showSection('parqueninos')">Parque de los niños/adultos</button>
+            <button onclick="showSection('botanico')">Planticas</button>
+            <button onclick="showSection('Shushi')">Shushi</button>
+            <button onclick="showSection('ratas')">Mus musculus</button>
+            <button onclick="showSection('Yuca')">Foto yuca</button>
+            <button onclick="showSection('anborguesa')">Pollo crispy</button>
+            <button onclick="showSection('aesthetic')">Aesthetic</button>
+            <button onclick="showSection('art')">Art</button>
+            <button onclick="showSection('Cine')">Cine</button>
+            <button onclick="showSection('cumples')">Cumples</button>
+            <button onclick="showSection('dulce')">Dulce</button>
+            <button onclick="showSection('grado')">Grado</button>
+            <button onclick="showSection('modo fiesta')">Modo Fiesta</button>
+            <button onclick="showSection('parque diversiones')">Parque Diversiones</button>
+            <button onclick="showSection('rutas')">Rutas</button>
+
+        </nav>
+    </header>
+
+    <!-- Secciones de recuerdos -->
+    <main>
+        <section id="gallery-section">
+            <h2 id="gallery-tittle"></h2>
+            <div id="gallery-container">
+                <button id="prev-arrow" class="arrow" onclick="prevImage()"></button>
+                <div id="gallery-img"></div>
+                <button id="next-arrow" class="arrow" onclick="nextImage()"></button>
+            </div>
+            <p id="description"></p>
+        </section>
+       
+    </main>
+
+    <footer>
+        <p>Una vez dijiste que querías tener un albúm con fotos. El albúm en físico es mucho mejor, pero mientras tanto podemos resolver con este :)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

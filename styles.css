@@ -1,0 +1,121 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffd7d7; /* Color de fondo suave */
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado y menú */
+header {
+    background-color: #53001c;
+    padding: 1em 0;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+}
+
+nav button {
+    background-color: #720127;
+    border: none;
+    margin: 0 5px 2px 2px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+nav button:hover {
+    background-color: #f90053;
+}
+
+/* Estilos de las secciones de galería */
+/* Galería */
+/* Contenedor de la galería */
+#gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 400px; /* Reduce el ancho máximo del contenedor */
+    margin: 0 auto;
+}
+
+/* Galería de imágenes */
+#gallery-img img {
+    max-width: 80%; /* Limita el tamaño de la imagen para que no se vea demasiado grande */
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#gallery-img img:hover {
+    transform: scale(1.05); /* Efecto zoom */
+}
+
+
+/* Estilos de las flechas de navegación */
+.arrow {
+    display: none;
+    background-color: #ff0e5e;
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    border: 4px solid white; /* Contorno blanco */
+}
+
+/* Utilizar un símbolo de flecha más redondeado */
+.arrow::before {
+    content: "➤"; /* Cambia el símbolo de flecha a uno más redondeado y amigable */
+    font-size: 1.3em;
+    display: inline-block;
+    transform: scale(1.3); /* Agrandar el icono */
+    font-weight: bold;
+}
+
+/* Separación adicional para las flechas */
+#prev-arrow {
+    left: -50px;
+    transform: translateY(-50%) rotate(180deg); /* Rota la flecha izquierda */
+}
+
+#next-arrow {
+    right: -50px;
+}
+
+/* Efecto hover para las flechas */
+.arrow:hover {
+    transform: translateY(-50%) scale(1.15);
+    background-color: #ff6584;
+}
+
+/* Footer */
+footer {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #720127;
+    color: white;
+}
+
+
